@@ -1,6 +1,6 @@
 local fn = vim.fn
 
--- Automatically install packer 
+-- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
@@ -46,6 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
