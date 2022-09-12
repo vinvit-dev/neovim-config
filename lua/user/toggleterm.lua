@@ -68,3 +68,9 @@ local python = Terminal:new({ cmd = "python", hidden = true })
 function _PYTHON_TOGGLE()
 	python:toggle()
 end
+
+
+local make = Terminal:new({ cmd = "make", hidden = true, close_on_exit = false})
+function _MAKE_TOGGLE()
+	make:toggle()
+end
