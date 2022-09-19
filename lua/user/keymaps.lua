@@ -76,3 +76,5 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Maximaze current vindow
 keymap("n", "<leader>o", ":ToggleOnly<cr>", opts)
+
+keymap("n", "<F8>", ":TagbarToggle<CR>", opts)
